@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
-  console.log('this is the updated script has been changed for demo');
+  console.log('this is the updated script');
   await page.goto('https://practicetestautomation.com/');
   await page.screenshot({ path: "/home/uncloud/monitorings/screenshots/screenshot1.png"});
   await page.getByRole('link', { name: 'Practice', exact: true }).click();
